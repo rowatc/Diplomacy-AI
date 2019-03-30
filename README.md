@@ -23,7 +23,7 @@ The best introduction to negotiating agents in Diplomacy.  This article contains
 
 > none of the negotiation algorithms ... have been able to significantly improve the performance over a non-negotiating baseline agent
 
-> Now that modern Chess and Go computers are already far superior to any human player [15](https://www.nature.com/articles/nature16961), we expect that Diplomacy will start to draw more attention as the next big challenge for computer science.
+> Now that modern Chess and Go computers are already far superior to any human player [[15](https://www.nature.com/articles/nature16961)], we expect that Diplomacy will start to draw more attention as the next big challenge for computer science.
 
 > we are not expecting the Diplomacy Challenge to have a winner any time soon. We regard it as a long term challenge which might take several years to tackle.
 
