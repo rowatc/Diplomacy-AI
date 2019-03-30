@@ -11,7 +11,7 @@ For more details about Diplomacy and bots playing it, see [these slides](http://
 
 ## Goals
 
-1. a **winning entry in the annual Automated Negotiating Agents' Competition (ANAC) Diplomacy League**.  The [2019 call for participation](http://www.iiia.csic.es/~davedejonge/bandana/files/call_for_participation_2019.pdf) (deadline 20 May) pairs submitted neogiating agents that only negotiate with the [D-Brane](https://link.springer.com/article/10.1007/s10489-017-0919-y) module, which will pick moves.  Negotiations use the [BANDANA framework](http://www.iiia.csic.es/~davedejonge/bandana), which has well-defined semantics.
+1. a **winning entry in the annual Automated Negotiating Agents' Competition (ANAC) Diplomacy League**.  Entrants submit negotiating agents that play by being paired to the [D-Brane](https://link.springer.com/article/10.1007/s10489-017-0919-y) module, which picks moves.  See hhe [2019 call for participation](http://www.iiia.csic.es/~davedejonge/bandana/files/call_for_participation_2019.pdf) (deadline 20 May); negotiations use the [BANDANA framework](http://www.iiia.csic.es/~davedejonge/bandana), which has well-defined semantics.
 1. an **article in an internationally recognised AI journal** describing our work.  (The ANAC competition has been held as part of the [ICJAI](https://www.ijcai.org), International Joint Conferences on Artificial Intelligence.)
 1. **beat human players** in online Diplomacy fora such as [PlayDiplomacy](https://www.playdiplomacy.com/) or [Backstabbr](https://www.backstabbr.com).
 
@@ -27,14 +27,20 @@ The best introduction to negotiating agents in Diplomacy.  This article contains
 
 > we are not expecting the Diplomacy Challenge to have a winner any time soon. We regard it as a long term challenge which might take several years to tackle.
 
-### [The Rules of Diplomacy](https://www.wizards.com/avalonhill/rules/diplomacy_rulebook.pdf) (Avalon Hill)
-
 ### [The BANDANA framework](http://www.iiia.csic.es/~davedejonge/bandana)
 
 [Downloads](http://www.iiia.csic.es/~davedejonge/bandana/download.php) include:
 * [March 2018 manual](http://www.iiia.csic.es/~davedejonge/bandana/files/Bandana%201.3%20Manual.pdf);
 * the accompanying [Java framework](http://www.iiia.csic.es/~davedejonge/bandana/files/Bandana%20Framework%201.3.1.zip);
 * [2018 ANAC agents](http://www.iiia.csic.es/~davedejonge/bandana/files/Agents%20submitted%20to%20the%20ANAC%202018%20Diplomacy%20Challenge.zip).
+
+### de Jonge and Sierra (2017), "[D-Brane: a diplomacy playing agent for automated negotiations research](https://link.springer.com/article/10.1007/s10489-017-0919-y)", Applied Intelligence
+
+Detailed description of the D-Brane (Diplomacy BRAnch & bound NEgotiator) modules, which seek to myopically maximise the Supply Centres gained in the current round using And/Or tree search with Branch & Bound.
+
+> the success of a negotiating agent may sometimes depend more on the accuracy and efficiency in which it calculates utility values than on the bargaining strategy it applies
+
+### [The Rules of Diplomacy](https://www.wizards.com/avalonhill/rules/diplomacy_rulebook.pdf) (Avalon Hill)
 
 ## Other resources
 
