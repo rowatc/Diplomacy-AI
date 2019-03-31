@@ -5,14 +5,16 @@ We're building an AI to play the board game Diplomacy!
 
 [Diplomacy](https://en.wikipedia.org/wiki/Diplomacy_(game))'s a fun game; there's an [annual competition for bots](http://mmi.tudelft.nl/negotiation/tournament); using RL to play the 'gunboat' variant should be relatively easy, but involves coalitions; full Diplomacy also involves natural language processing, so will be a real challenge.
 
-## Introduction
+## Basics
 
 For more details about Diplomacy and bots playing it, see [these slides](http://wrongdoing.org/181004_Diplomacy_AI.pdf), based on [this lightning talk](https://youtu.be/Ojpn3UXZuGM?t=1033) at [Bornhack](https://bornhack.dk) 2018.
 
+We intend to develop this project via the [London Reinforcement Learning](https://www.meetup.com/London-Reinforcement-Learning/) Meetup.
+
 ## Goals
 
-1. a **winning entry in the annual Automated Negotiating Agents' Competition (ANAC) Diplomacy League**.  Entrants submit negotiating agents that play by being paired to the [D-Brane](https://link.springer.com/article/10.1007/s10489-017-0919-y) module, which picks moves.  See hhe [2019 call for participation](http://www.iiia.csic.es/~davedejonge/bandana/files/call_for_participation_2019.pdf) (deadline 20 May); negotiations use the [BANDANA framework](http://www.iiia.csic.es/~davedejonge/bandana), which has well-defined semantics.
-1. an **article in an internationally recognised AI journal** describing our work.  (The ANAC competition has been held as part of the [ICJAI](https://www.ijcai.org), International Joint Conferences on Artificial Intelligence.)
+1. a **winning entry in the annual Automated Negotiating Agents' Competition (ANAC) Diplomacy League**.  Entrants submit negotiating agents that play by being paired to the [D-Brane](https://link.springer.com/article/10.1007/s10489-017-0919-y) module, which picks moves.  See the [2019 call for participation](http://www.iiia.csic.es/~davedejonge/bandana/files/call_for_participation_2019.pdf) (deadline 20 May); negotiations use the [BANDANA framework](http://www.iiia.csic.es/~davedejonge/bandana), which has well-defined semantics.
+1. an **article in an internationally recognised AI journal** describing our work.  (The ANAC competition has been held as part of the [IJCAI](https://www.ijcai.org), International Joint Conferences on Artificial Intelligence.)
 1. **beat human players** in online Diplomacy fora such as [PlayDiplomacy](https://www.playdiplomacy.com/) or [Backstabbr](https://www.backstabbr.com).
 
 ## Key resources
@@ -28,6 +30,8 @@ The best introduction to negotiating agents in Diplomacy.  This article contains
 > we are not expecting the Diplomacy Challenge to have a winner any time soon. We regard it as a long term challenge which might take several years to tackle.
 
 ### [The BANDANA framework](http://www.iiia.csic.es/~davedejonge/bandana)
+
+A Java framework for developing automated agents to play Diplomacy.  It calls [Parlance](https://pypi.org/project/Parlance).
 
 [Downloads](http://www.iiia.csic.es/~davedejonge/bandana/download.php) include:
 * [March 2018 manual](http://www.iiia.csic.es/~davedejonge/bandana/files/Bandana%201.3%20Manual.pdf);
@@ -48,9 +52,17 @@ Detailed description of the D-Brane (Diplomacy BRAnch & bound NEgotiator) module
 
 Trained a TD RL system on an existing knowledge base.  In contrast to the ANAC project, this system plays 'gunboat' Diplomacy, moving without negotiations.  &#0167;2 describes the game graph and action space.
 
+### [Parlance](https://pypi.org/project/Parlance/)
+
+A Python framework for playing the Diplomacy board game over a network
+
 ### [Diplomacy AI Development Environment](http://daide.org.uk) (DAIDE)
 
 A Diplomacy AI community project begun in 2002, which is now somewhat moribund.  There seems to have been no significant new material added to the website since 2013.
+
+### [Diplomacy Adjudicator Test Cases](http://web.inter.nl.net/users/L.B.Kruijswijk/) (DATC)
+
+Detailed discussion of algorithmic order adjudication (against 2000 Diplomacy rules) developed by Lucas Kruijswijk.  Last updated in 2009.
 
 ### Webb, Chin, Wilkins, Payce, Dedoyard (2008), "[Automated Negotiation in the Game of Diplomacy](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.466.6361&rep=rep1&type=pdf)"
 
