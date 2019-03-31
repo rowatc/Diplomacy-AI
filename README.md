@@ -48,13 +48,13 @@ Detailed description of the D-Brane (Diplomacy BRAnch & bound NEgotiator) module
 
 ## Other resources
 
+### [Parlance](https://pypi.org/project/Parlance/)
+
+A Python framework for playing the Diplomacy board game over a network.  [BANDANA](http://www.iiia.csic.es/~davedejonge/bandana) calls it.
+
 ### Shapiro, Fuchs and Levinson (2002), "[Learning a Game Strategy Using Pattern-Weights and Self-Play](https://link.springer.com/chapter/10.1007/978-3-540-40031-8_4)", Third International Conference on Computers and Games, Edmonton, Canada.
 
 Trained a TD RL system on an existing knowledge base.  In contrast to the ANAC project, this system plays 'gunboat' Diplomacy, moving without negotiations.  &#0167;2 describes the game graph and action space.
-
-### [Parlance](https://pypi.org/project/Parlance/)
-
-A Python framework for playing the Diplomacy board game over a network
 
 ### [Diplomacy AI Development Environment](http://daide.org.uk) (DAIDE)
 
