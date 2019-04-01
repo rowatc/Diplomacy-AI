@@ -145,7 +145,7 @@ The podcast covers some of the material in David Hill's "[The Board Game of the 
 
 > If you’ve ever heard of Diplomacy, chances are you know it as “the game that ruins friendships.”
 
-> Edi took out scissors and a pen from a drawer and set to work on the letter, painstakingly doctoring it. When he was finished he held up the letter proudly and read it to himself. I am against a three-way draw and I will take three more supply centers … He put the forgery in the mail to the third player. Then he waited.
+> Edi took out scissors and a pen from a drawer and set to work on the letter, painstakingly doctoring it. When he was finished he held up the letter proudly and read it to himself. *I am against a three-way draw and I will take three more supply centers …* He put the forgery in the mail to the third player. Then he waited.
 
 > “What I love about the game is that no one can really play the game ‘right,’” Birsan said. “Otherwise, after 50 years, that would have been discovered long ago and the hobby would have died of boredom.”
 
