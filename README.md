@@ -83,6 +83,10 @@ University of Glasgow MSc thesis supervised by Ron Poet.  Chapter 3 discusses th
 
 A book about Diplomacy theory, including opening and endgame theory.  Available online [here](http://www.diplomacy-archive.com/god.htm).
 
+> I had pulled off a particularly vicious stab (not even a very good one, as it turned out) on an ally who had served me faithfully for five game years. I waited, cringing, for the next development; and there in the next post was a letter with the familiar postmark. I opened it apprehensively.
+
+> 'Dear Richard,' it began. 'Ouch! That hurt. It looks as if I shall be playing a rather minor role in our partnership from now on. ...' And it went on to discuss some tactical possibilities for the coming season. Now, this letter had two effects: first, it made me feel like a louse; second, it induced me to let him off the hook, because I knew that in the last resort I would rather get a letter from him than from any of the other potential allies in that area. That is the way to treat a stab.
+
 ### Kostick (2015), "[The Art of Correspondence in the Game of Diplomacy](https://books.google.co.uk/books?isbn=0993415105)"
 
 A book about negotiation in (human) Diplomacy.
