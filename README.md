@@ -79,6 +79,10 @@ Project report of Imperial College MEng students, again supervised by Iain Phill
 
 University of Glasgow MSc thesis supervised by Ron Poet.  Chapter 3 discusses theories of Diplomacy play.
 
+### Sharp (1978), "[The game of Diplomacy](https://books.google.co.uk/books?isbn=0213166763)"
+
+A book about Diplomacy theory, including opening and endgame theory.  Available online [here](http://www.diplomacy-archive.com/god.htm).
+
 ### Kostick (2015), "[The Art of Correspondence in the Game of Diplomacy](https://books.google.co.uk/books?isbn=0993415105)"
 
-A discussion of Diplomacy negotiations, for humans.
+A book about negotiation in (human) Diplomacy.
