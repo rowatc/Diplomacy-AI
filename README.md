@@ -89,4 +89,4 @@ A book about Diplomacy theory, including opening and endgame theory.  Available 
 
 ### Kostick (2015), "[The Art of Correspondence in the Game of Diplomacy](https://books.google.co.uk/books?isbn=0993415105)"
 
-A book about negotiation in (human) Diplomacy.
+A book about negotiation in (human) Diplomacy by [Conor Kostick](https://en.wikipedia.org/wiki/Conor_Kostick), historian, novelist, game designer and international Diplomacy champion.
