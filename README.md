@@ -3,7 +3,7 @@ We're building an AI to play the board game Diplomacy!
 
 ## tl;dr
 
-[Diplomacy](https://en.wikipedia.org/wiki/Diplomacy_(game))'s a fun game; there's an [annual competition for bots](http://mmi.tudelft.nl/negotiation/tournament); using RL to play the 'gunboat' variant should be relatively easy, but involves coalitions; full Diplomacy also involves natural language processing, so will be a real challenge.
+[Diplomacy](https://en.wikipedia.org/wiki/Diplomacy_(game))'s a fun game invented by [Allan Calhamer](https://en.wikipedia.org/wiki/Allan_B._Calhamer); there's an [annual competition for bots](http://mmi.tudelft.nl/negotiation/tournament); using RL to play the 'gunboat' variant should be relatively easy, but involves coalitions; full Diplomacy also involves natural language processing, so will be a real challenge.
 
 ## Basics
 
@@ -16,7 +16,7 @@ We intend to develop this project via the [London Reinforcement Learning](https:
 1. an **AI that systematically out-performs [D-Brane](https://link.springer.com/article/10.1007/s10489-017-0919-y) in Gunboat Diplomacy** (without negotiation).
 1. a **winning entry in the annual Automated Negotiating Agents' Competition (ANAC) Diplomacy League**.  Entrants submit negotiating agents that play by being coupled to [D-Brane](https://link.springer.com/article/10.1007/s10489-017-0919-y), which picks moves.  See the [2019 call for participation](http://www.iiia.csic.es/~davedejonge/bandana/files/call_for_participation_2019.pdf) (deadline 20 May); negotiations use the [BANDANA framework](http://www.iiia.csic.es/~davedejonge/bandana), which has well-defined semantics.
 1. an **article in an internationally recognised AI journal** describing our work.  (The ANAC competition has been held as part of the [IJCAI](https://www.ijcai.org), International Joint Conferences on Artificial Intelligence.)
-1. **beat human players** in online Diplomacy fora such as [PlayDiplomacy](https://www.playdiplomacy.com/) or [Backstabbr](https://www.backstabbr.com).  Initially, Gunboat Diplomacy, then full Diplomacy.
+1. **beat human players** in online Diplomacy fora such as [PlayDiplomacy](https://www.playdiplomacy.com/) or [Backstabbr](https://www.backstabbr.com).  Initially, Gunboat Diplomacy, then full Diplomacy online and, finally, full Diplomacy face-to-face (e.g. at [WorldDipCon](https://en.wikipedia.org/wiki/Diplomacy_(game)#Major_championship_tournaments)).
 
 ## Key resources
 
@@ -35,13 +35,15 @@ The best introduction to negotiating agents in Diplomacy.  This article contains
 A Java framework for developing automated agents to play Diplomacy.  It calls [Parlance](https://pypi.org/project/Parlance).
 
 [Downloads](http://www.iiia.csic.es/~davedejonge/bandana/download.php) include:
-* [March 2018 manual](http://www.iiia.csic.es/~davedejonge/bandana/files/Bandana%201.3%20Manual.pdf);
+* [March 2018 manual](http://www.iiia.csic.es/~davedejonge/bandana/files/Bandana%201.3%20Manual.pdf): download this first and follow the installation instructions for the BANDANA Jave framework and Parlance game server;
 * the accompanying [Java framework](http://www.iiia.csic.es/~davedejonge/bandana/files/Bandana%20Framework%201.3.1.zip);
 * [2018 ANAC agents](http://www.iiia.csic.es/~davedejonge/bandana/files/Agents%20submitted%20to%20the%20ANAC%202018%20Diplomacy%20Challenge.zip).
 
+The scoring system (12 points for a solo victory, etc.) is drawn from [PlayDiplomacy's](https://www.playdiplomacy.com/forum/viewtopic.php?f=7&t=30974).
+
 ### [The Rules of Diplomacy](http://www.wizards.com/avalonhill/rules/diplomacy_rulebook.pdf) (Avalon Hill)
 
-2008, 5th edition.  Here is the [2000 4th edition](http://www.wizards.com/avalonhill/rules/diplomacy.pdf).
+2008, 5th edition.  Here is the [2000 4th edition](http://www.wizards.com/avalonhill/rules/diplomacy.pdf).  See the [DATC](http://web.inter.nl.net/users/L.B.Kruijswijk/#3) for a list of previous editions.
 
 ## Other resources
 
@@ -59,13 +61,22 @@ Detailed description of the D-Brane (Diplomacy BRAnch & bound NEgotiator) module
 
 Trained a TD RL system on an existing knowledge base.  In contrast to the ANAC project, this system plays 'gunboat' Diplomacy, moving without negotiations.  &#0167;2 describes the game graph and action space.
 
+### [World Diplomacy Database](world-diplomacy-database.com)
+
+Includes:
+1. [tournaments](http://world-diplomacy-database.com/php/results/tournament_list.php);
+1. player [rankings](http://world-diplomacy-database.com/php/ranking/index.php) under a number of systems;
+1. different [scoring systems](http://world-diplomacy-database.com/php/scoring/scoring.php).
+
 ### online Diplomacy games
 
 Some online fora for playing Diplomacy are:
 
 #### [PlayDiplomacy](https://www.playdiplomacy.com/)
 
-Top 25 players are displayed [here](https://www.playdiplomacy.com/stats.php?sub_page=1).  Like chess' ELO ratings, [PlayDiplomacy rankings](https://www.playdiplomacy.com/stats.php?sub_page=3) reflect the strength of the opposition that players have overcome.  The exact formula is deliberately secret to prevent "[play[ing] the system rather than the game](https://www.playdiplomacy.com/forum/viewtopic.php?f=129&t=34913#p602092)".  A basic order adjudication tool is available [here](https://www.playdiplomacy.com/judge/new_manual.php).  Their online discussion forum is [here](https://www.playdiplomacy.com/forum/).
+Top 25 players are displayed [here](https://www.playdiplomacy.com/stats.php?sub_page=1).  Like Elo ratings, [PlayDiplomacy rankings](https://www.playdiplomacy.com/stats.php?sub_page=3) reflect the strength of the opposition that players have overcome.  The exact formula is deliberately secret to prevent "[play[ing] the system rather than the game](https://www.playdiplomacy.com/forum/viewtopic.php?f=129&t=34913#p602092)", but seems to assign 12 points for a solo victory, and decreasing weight to older games (a system called '[fading echoes](https://www.playdiplomacy.com/forum/viewtopic.php?f=7&t=30974)').
+
+A basic order adjudication tool is available [here](https://www.playdiplomacy.com/judge/new_manual.php).  Their online discussion forum is [here](https://www.playdiplomacy.com/forum/).
 
 #### [The DPjudge](http://uk.diplom.org/)
 
@@ -83,11 +94,14 @@ Backstabbr's order adjudication [claims to be compliant](https://www.backstabbr.
 
 #### Sharp (1978), "[The game of Diplomacy](https://books.google.co.uk/books?isbn=0213166763)"
 
-Written with dated verve, this book colourfully introduces Diplomacy theory, including opening and endgame theory.  Available online [here](http://www.diplomacy-archive.com/god.htm).
+Written with dated verve, this book colourfully introduces Diplomacy theory, including opening and endgame theory informed by basic statistics.  Available online [here](http://www.diplomacy-archive.com/god.htm).
+
+> consider one of the most important facts about the game of Diplomacy: each player is outnumbered six to one
 
 > I had pulled off a particularly vicious stab (not even a very good one, as it turned out) on an ally who had served me faithfully for five game years. I waited, cringing, for the next development; and there in the next post was a letter with the familiar postmark. I opened it apprehensively.
-
 > 'Dear Richard,' it began. 'Ouch! That hurt. It looks as if I shall be playing a rather minor role in our partnership from now on. ...' And it went on to discuss some tactical possibilities for the coming season. Now, this letter had two effects: first, it made me feel like a louse; second, it induced me to let him off the hook, because I knew that in the last resort I would rather get a letter from him than from any of the other potential allies in that area. That is the way to treat a stab.
+
+> I once induced England to play it as part of an elaborate long-term bargain: England was never to occupy the North Sea, in exchange for which Germany undertook to build no fleets at all.
 
 #### Kostick (2015), "[The Art of Correspondence in the Game of Diplomacy](https://books.google.co.uk/books?isbn=0993415105)"
 
@@ -101,13 +115,13 @@ A book about negotiation in (human) Diplomacy by [Conor Kostick](https://en.wiki
 
 ### [Diplomacy Adjudicator Test Cases](http://web.inter.nl.net/users/L.B.Kruijswijk/) (DATC)
 
-Detailed discussion of algorithmic order adjudication (against 2000 Diplomacy rules) developed by Lucas Kruijswijk.  Last updated in 2009.
+Detailed discussion of algorithmic order adjudication based primarily on the 2000 Diplomacy rules.  Last updated in 2009.
 
 ### [Diplomacy AI Development Environment](http://daide.org.uk) (DAIDE)
 
 A UK-based Diplomacy AI community project begun in 2002, which is now moribund.  There seems to have been no significant new material added to the website since 2013.
 
-#### Masters' theses
+### Masters' theses
 
 #### Webb, Chin, Wilkins, Payce, Dedoyard (2008), "[Automated Negotiation in the Game of Diplomacy](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.466.6361&rep=rep1&type=pdf)"
 
@@ -133,11 +147,13 @@ Collected 145,000 dyadic messages from 249 games (JSON format) played on [The DP
 
 ![alt text](http://vene.ro/betrayal/time.png "The dynamics of betrayal")
 
-The authors' page [here](http://vene.ro/betrayal/) summarises their findings and presents their anonymised data, and video and slides from their ACL 2015 talk.  Their "We're in the news!" list omits security expert [Bruce Schneier's blogpost](https://www.schneier.com/blog/archives/2015/08/detecting_betra.html).
+The authors' page [here](http://vene.ro/betrayal/) summarises their findings and presents their anonymised data, and video and slides from their ACL 2015 talk.  Also mentioned by security expert [Bruce Schneier's blogpost](https://www.schneier.com/blog/archives/2015/08/detecting_betra.html).
 
 ### podcasts!?
 
 Yup, a [This American Life podcast](https://www.thisamericanlife.org/531/got-your-back/act-one) emphasising the importance of the strategies beyond the board:
+
+> "And the way he said it to me made me feel like it wasn't a manipulation." (Ambassador [Dennis Ross](https://en.wikipedia.org/wiki/Dennis_Ross))
 
 > "I want to tell you how much ... I was impressed by this" (Ambassador [Dennis Ross](https://en.wikipedia.org/wiki/Dennis_Ross))
 
