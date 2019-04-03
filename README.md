@@ -121,6 +121,20 @@ Detailed discussion of algorithmic order adjudication based primarily on the 200
 
 A UK-based Diplomacy AI community project begun in 2002, which is now moribund.  There seems to have been no significant new material added to the website since 2013.
 
+### NLP
+
+#### Niculae, Kumar, Boyd-Graber, Danescu-Niculescu-Mizil (2015), "[Linguistic Harbingers of Betrayal: A Case Study on an Online Strategy Game](https://www.aclweb.org/anthology/P15-1159)", Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and the 7th International Joint Conference on Natural Language Processing, pages 1650–1659, Beijing, China
+
+Collected 145,000 dyadic messages from 249 games (JSON format) played on [The DPjudge](http://uk.diplom.org) and another online forum.  The messages were then analysed using tools such as Stanford's [Sentiment Analyzer](https://nlp.stanford.edu/sentiment) and [politeness classifiers](https://nlp.stanford.edu/pubs/politeness.pdf).
+
+> half of the games have over 515 messages exchanged between the players, while the top quartile has over 750 messages per game. Also, non-trivial messages (with at least one sentence) tend to be complex: over half of them have at least five sentences, and the top quartile consists of messages with eight or more sentences.
+
+> The resulting model achieves a cross-validation accuracy of 57% and a Matthews correlation coefficient of 0.14, significantly above chance ... This indicates that, unlike the actual players, the classifier is able to exploit subtle linguistic signals that surface in the conversation.
+
+![alt text](http://vene.ro/betrayal/time.png "The dynamics of betrayal")
+
+The authors' page [here](http://vene.ro/betrayal/) summarises their findings and presents their anonymised data, and video and slides from their ACL 2015 talk.  Also mentioned by security expert [Bruce Schneier's blogpost](https://www.schneier.com/blog/archives/2015/08/detecting_betra.html).
+
 ### Masters' theses
 
 #### Webb, Chin, Wilkins, Payce, Dedoyard (2008), "[Automated Negotiation in the Game of Diplomacy](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.466.6361&rep=rep1&type=pdf)"
@@ -136,18 +150,6 @@ Project report of Imperial College MEng students, again supervised by Iain Phill
 #### Ritchie (2003), "[Diplomacy — A.I.](http://daide.org.uk/external/ritchie200309.pdf)"
 
 University of Glasgow MSc thesis supervised by Ron Poet.  Chapter 3 discusses theories of Diplomacy play.
-
-### Niculae, Kumar, Boyd-Graber, Danescu-Niculescu-Mizil (2015), "[Linguistic Harbingers of Betrayal: A Case Study on an Online Strategy Game](https://www.aclweb.org/anthology/P15-1159)", Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and the 7th International Joint Conference on Natural Language Processing, pages 1650–1659, Beijing, China
-
-Collected 145,000 dyadic messages from 249 games (JSON format) played on [The DPjudge](http://uk.diplom.org) and another online forum.  The messages were then analysed using tools such as Stanford's [Sentiment Analyzer](https://nlp.stanford.edu/sentiment) and [politeness classifiers](https://nlp.stanford.edu/pubs/politeness.pdf).
-
-> half of the games have over 515 messages exchanged between the players, while the top quartile has over 750 messages per game. Also, non-trivial messages (with at least one sentence) tend to be complex: over half of them have at least five sentences, and the top quartile consists of messages with eight or more sentences.
-
-> The resulting model achieves a cross-validation accuracy of 57% and a Matthews correlation coefficient of 0.14, significantly above chance ... This indicates that, unlike the actual players, the classifier is able to exploit subtle linguistic signals that surface in the conversation.
-
-![alt text](http://vene.ro/betrayal/time.png "The dynamics of betrayal")
-
-The authors' page [here](http://vene.ro/betrayal/) summarises their findings and presents their anonymised data, and video and slides from their ACL 2015 talk.  Also mentioned by security expert [Bruce Schneier's blogpost](https://www.schneier.com/blog/archives/2015/08/detecting_betra.html).
 
 ### podcasts!?
 
