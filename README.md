@@ -151,7 +151,7 @@ The authors' page [here](http://vene.ro/betrayal/) summarises their findings and
 
 ### podcasts!?
 
-Yup, a [This American Life podcast](https://www.thisamericanlife.org/531/got-your-back/act-one) emphasising the importance of the strategies beyond the board:
+Yup, a [This American Life podcast](https://www.thisamericanlife.org) episode, [Absolutely Stabulous](https://www.thisamericanlife.org/531/got-your-back/act-one), emphasising the importance of the strategies beyond the board:
 
 > "And the way he said it to me made me feel like it wasn't a manipulation." (Ambassador [Dennis Ross](https://en.wikipedia.org/wiki/Dennis_Ross))
 
