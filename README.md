@@ -9,12 +9,12 @@ We're building an AI to play the board game Diplomacy!
 
 For more details about Diplomacy and bots playing it, see [these slides](http://wrongdoing.org/181004_Diplomacy_AI.pdf), based on [this lightning talk](https://youtu.be/Ojpn3UXZuGM?t=1033) at [Bornhack](https://bornhack.dk) 2018.
 
-We intend to develop this project via the [London Reinforcement Learning](https://www.meetup.com/London-Reinforcement-Learning/) Meetup.
+We intend to develop this project via the [London Reinforcement Learning](https://www.meetup.com/London-Reinforcement-Learning/) Meetup.  Please join us - either in person - or on [Slack](https://diplomacyai.slack.com).
 
 ## Goals
 
-1. an **AI that systematically out-performs [D-Brane](https://link.springer.com/article/10.1007/s10489-017-0919-y) in Gunboat Diplomacy** (without negotiation).
-1. a **winning entry in the annual Automated Negotiating Agents' Competition (ANAC) Diplomacy League**.  Entrants submit negotiating agents that play by being coupled to [D-Brane](https://link.springer.com/article/10.1007/s10489-017-0919-y), which picks moves.  See the [2019 call for participation](http://www.iiia.csic.es/~davedejonge/bandana/files/call_for_participation_2019.pdf) (deadline 20 May); negotiations use the [BANDANA framework](http://www.iiia.csic.es/~davedejonge/bandana), which has well-defined semantics.
+1. near term: an **AI that systematically out-performs [D-Brane](https://link.springer.com/article/10.1007/s10489-017-0919-y) in Gunboat Diplomacy** (without negotiation).
+1. 2020 or later: a **winning entry in the annual Automated Negotiating Agents' Competition (ANAC) Diplomacy League**.  Entrants submit negotiating agents that play by being coupled to [D-Brane](https://link.springer.com/article/10.1007/s10489-017-0919-y), which picks moves.  See the [2019 call for participation](http://www.iiia.csic.es/~davedejonge/bandana/files/call_for_participation_2019.pdf) (deadline 20 May); negotiations use the [BANDANA framework](http://www.iiia.csic.es/~davedejonge/bandana), which has well-defined semantics.
 1. an **article in an internationally recognised AI journal** describing our work.  (The ANAC competition has been held as part of the [IJCAI](https://www.ijcai.org), International Joint Conferences on Artificial Intelligence.)
 1. **beat human players** in online Diplomacy fora such as [PlayDiplomacy](https://www.playdiplomacy.com/) or [Backstabbr](https://www.backstabbr.com).  Initially, Gunboat Diplomacy, then full Diplomacy online and, finally, full Diplomacy face-to-face (e.g. at [WorldDipCon](https://en.wikipedia.org/wiki/Diplomacy_(game)#Major_championship_tournaments)).
 
