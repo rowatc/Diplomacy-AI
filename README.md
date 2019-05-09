@@ -121,6 +121,8 @@ Detailed discussion of algorithmic order adjudication based primarily on the 200
 
 A UK-based Diplomacy AI community project begun in 2002, which is now moribund.  There seems to have been no significant new material added to the website since 2013.
 
+Its March 2010 DAIDE Message Syntax document is [here](http://www.ellought.demon.co.uk/dipai/daide_syntax.pdf).
+
 ### NLP
 
 #### Niculae, Kumar, Boyd-Graber, Danescu-Niculescu-Mizil (2015), "[Linguistic Harbingers of Betrayal: A Case Study on an Online Strategy Game](https://www.aclweb.org/anthology/P15-1159)", Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and the 7th International Joint Conference on Natural Language Processing, pages 1650–1659, Beijing, China
@@ -136,6 +138,10 @@ Collected 145,000 dyadic messages from 249 games (JSON format) played on [The DP
 The authors' page [here](http://vene.ro/betrayal/) summarises their findings and presents their anonymised data, and video and slides from their ACL 2015 talk.  Also mentioned by security expert [Bruce Schneier's blogpost](https://www.schneier.com/blog/archives/2015/08/detecting_betra.html).
 
 ### Masters' theses
+
+#### Fernandes de Mascarenhas (2017), "[AI player for board game Diplomacy](https://fenix.tecnico.ulisboa.pt/downloadFile/1970719973966529/Thesis.pdf)"
+
+Surveys DAIDE, including the bots developed for it, and presents Tagus, its own (hard-coded) bot.
 
 #### Webb, Chin, Wilkins, Payce, Dedoyard (2008), "[Automated Negotiation in the Game of Diplomacy](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.466.6361&rep=rep1&type=pdf)"
 
