@@ -9,7 +9,7 @@ We're building an AI to play the board game Diplomacy!
 
 For more details about Diplomacy and bots playing it, see [these slides](181004_Diplomacy_AI.pdf), based on [this lightning talk](https://youtu.be/Ojpn3UXZuGM?t=1033) at [Bornhack](https://bornhack.dk) 2018.
 
-We intend to develop this project via the [London Reinforcement Learning](https://www.meetup.com/London-Reinforcement-Learning/) Meetup.  Please join us - either in person - or on [Slack](https://diplomacyai.slack.com).
+We intend to develop this project via the [Diplomacy AI](https://www.meetup.com/Diplomacy-AI-Meetup-Group/) Meetup.  Please join us - either in person - or on [Slack](https://diplomacyai.slack.com).
 
 ## Goals
 
