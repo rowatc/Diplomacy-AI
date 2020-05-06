@@ -65,7 +65,7 @@ Introduces DipNet, a gunboat bot that is first trained (supervised learning) on 
 
 >  the supervised agent was able to learn to coordinate support orders while this behaviour appears to deteriorate during self-play training.
 
-The DipNet code is available [here](https://github.com/diplomacy/research).  DipNet is implemented as _KestasBot_ on [webdiplomacy.net](webdiplomacy.net).
+The Python 3 DipNet code is available [here](https://github.com/diplomacy/research).  DipNet is implemented as _KestasBot_ on [webdiplomacy.net](webdiplomacy.net).
 
 ### de Jonge and Sierra (2017), "[D-Brane: a diplomacy playing agent for automated negotiations research](https://link.springer.com/article/10.1007/s10489-017-0919-y)", Applied Intelligence
 
