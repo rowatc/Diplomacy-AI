@@ -13,11 +13,11 @@ We intend to develop this project via the [Diplomacy AI](https://www.meetup.com/
 
 ## Goals
 
-- [] near term: an **AI that systematically out-performs state-of-the-art bots (e.g. D-Brane, KestasBot) in Gunboat Diplomacy** (without negotiation).
+1. near term: an **AI that systematically out-performs state-of-the-art bots (e.g. D-Brane, KestasBot) in Gunboat Diplomacy** (without negotiation).
 <!-- 1. 2020 or later: a **winning entry in the annual Automated Negotiating Agents' Competition (ANAC) Diplomacy League**.  Entrants submit negotiating agents that play by being coupled to [D-Brane](https://link.springer.com/article/10.1007/s10489-017-0919-y), which picks moves.  See the [2019 call for participation](http://www.iiia.csic.es/~davedejonge/bandana/files/call_for_participation_2019.pdf) (deadline 20 May); negotiations use the [BANDANA framework](http://www.iiia.csic.es/~davedejonge/bandana), which has well-defined semantics.
 -->
-- [] an **article in an internationally recognised AI journal** describing our work.  (The ANAC Diplomacy League was part of the [IJCAI](https://www.ijcai.org), International Joint Conferences on Artificial Intelligence.)
-- [] **beat human players** in online Diplomacy fora such as [PlayDiplomacy](https://www.playdiplomacy.com/) or [Backstabbr](https://www.backstabbr.com).  Initially, Gunboat Diplomacy, then full Diplomacy online and, finally, full Diplomacy face-to-face (e.g. at [WorldDipCon](https://en.wikipedia.org/wiki/Diplomacy_(game)#Major_championship_tournaments)).
+1. an **article in an internationally recognised AI journal** describing our work.  (The ANAC Diplomacy League was part of the [IJCAI](https://www.ijcai.org), International Joint Conferences on Artificial Intelligence.)
+1. **beat human players** in online Diplomacy fora.  Initially, Gunboat Diplomacy, then full Diplomacy online and, finally, full Diplomacy face-to-face (e.g. at [WorldDipCon](https://en.wikipedia.org/wiki/Diplomacy_(game)#Major_championship_tournaments)).
 
 ## Key resources
 
