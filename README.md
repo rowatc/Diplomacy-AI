@@ -3,7 +3,7 @@ We're building an AI to play the board game Diplomacy!
 
 ## tl;dr
 
-[Diplomacy](https://en.wikipedia.org/wiki/Diplomacy_(game))'s a fun game invented by [Allan Calhamer](https://en.wikipedia.org/wiki/Allan_B._Calhamer); there's an [annual competition for bots](http://mmi.tudelft.nl/negotiation/tournament); using RL to play the 'gunboat' variant should be relatively easy, but involves coalitions; full Diplomacy also involves natural language processing, so will be a real challenge.
+[Diplomacy](https://en.wikipedia.org/wiki/Diplomacy_(game)) embeds simple board play in a framework of rich, unstructured negotiations; using reinforcement learning to play the 'gunboat' variant (without negotiations) should be relatively easy, but involves coalitions; the natural language processing of full Diplomacy will be a real challenge.
 
 ## Basics
 
@@ -13,10 +13,11 @@ We intend to develop this project via the [Diplomacy AI](https://www.meetup.com/
 
 ## Goals
 
-1. near term: an **AI that systematically out-performs [D-Brane](https://link.springer.com/article/10.1007/s10489-017-0919-y) in Gunboat Diplomacy** (without negotiation).
-1. 2020 or later: a **winning entry in the annual Automated Negotiating Agents' Competition (ANAC) Diplomacy League**.  Entrants submit negotiating agents that play by being coupled to [D-Brane](https://link.springer.com/article/10.1007/s10489-017-0919-y), which picks moves.  See the [2019 call for participation](http://www.iiia.csic.es/~davedejonge/bandana/files/call_for_participation_2019.pdf) (deadline 20 May); negotiations use the [BANDANA framework](http://www.iiia.csic.es/~davedejonge/bandana), which has well-defined semantics.
-1. an **article in an internationally recognised AI journal** describing our work.  (The ANAC competition has been held as part of the [IJCAI](https://www.ijcai.org), International Joint Conferences on Artificial Intelligence.)
-1. **beat human players** in online Diplomacy fora such as [PlayDiplomacy](https://www.playdiplomacy.com/) or [Backstabbr](https://www.backstabbr.com).  Initially, Gunboat Diplomacy, then full Diplomacy online and, finally, full Diplomacy face-to-face (e.g. at [WorldDipCon](https://en.wikipedia.org/wiki/Diplomacy_(game)#Major_championship_tournaments)).
+- [] near term: an **AI that systematically out-performs state-of-the-art bots (e.g. D-Brane, KestasBot) in Gunboat Diplomacy** (without negotiation).
+<!-- 1. 2020 or later: a **winning entry in the annual Automated Negotiating Agents' Competition (ANAC) Diplomacy League**.  Entrants submit negotiating agents that play by being coupled to [D-Brane](https://link.springer.com/article/10.1007/s10489-017-0919-y), which picks moves.  See the [2019 call for participation](http://www.iiia.csic.es/~davedejonge/bandana/files/call_for_participation_2019.pdf) (deadline 20 May); negotiations use the [BANDANA framework](http://www.iiia.csic.es/~davedejonge/bandana), which has well-defined semantics.
+-->
+- [] an **article in an internationally recognised AI journal** describing our work.  (The ANAC Diplomacy League was part of the [IJCAI](https://www.ijcai.org), International Joint Conferences on Artificial Intelligence.)
+- [] **beat human players** in online Diplomacy fora such as [PlayDiplomacy](https://www.playdiplomacy.com/) or [Backstabbr](https://www.backstabbr.com).  Initially, Gunboat Diplomacy, then full Diplomacy online and, finally, full Diplomacy face-to-face (e.g. at [WorldDipCon](https://en.wikipedia.org/wiki/Diplomacy_(game)#Major_championship_tournaments)).
 
 ## Key resources
 
@@ -41,15 +42,30 @@ A Java framework for developing automated agents to play Diplomacy.  It calls [P
 
 The scoring system (12 points for a solo victory, etc.) is drawn from [PlayDiplomacy's](https://www.playdiplomacy.com/forum/viewtopic.php?f=7&t=30974).
 
-### [The Rules of Diplomacy](http://www.wizards.com/avalonhill/rules/diplomacy_rulebook.pdf) (Avalon Hill)
+### [The Rules of Diplomacy](https://media.wizards.com/2015/downloads/ah/diplomacy_rules.pdf) (Avalon Hill)
 
-2008, 5th edition.  Here is the [2000 4th edition](http://www.wizards.com/avalonhill/rules/diplomacy.pdf).  See the [DATC](http://web.inter.nl.net/users/L.B.Kruijswijk/#3) for a list of previous editions.
+2008, 5th edition.  Here is the [2000 4th edition](https://web.archive.org/web/20040611030459/http://www.wizards.com/avalonhill/rules/diplomacy.pdf).  See Kruijswijk's [DATC](http://web.inter.nl.net/users/L.B.Kruijswijk/#3) for a list of previous editions.
 
 ## Other resources
 
 ### [Parlance](https://pypi.org/project/Parlance/)
 
-A Python framework for playing the Diplomacy board game over a network.  [BANDANA](http://www.iiia.csic.es/~davedejonge/bandana) calls it.  Successor to [DAIDE](https://daide.org.uk).
+A Python 2 framework for playing the Diplomacy board game over a network.  [BANDANA](http://www.iiia.csic.es/~davedejonge/bandana) calls it.  Successor to [DAIDE](https://daide.org.uk).
+
+### [Parang](https://pypi.org/project/Parang/)
+
+A set of bots to play Diplomacy over Parlance, from **blabberbot** ("A simple bot that sends constant streams of random press") to **neurotic** ("A neural-network bot, which unfortunately has no memory yet") and **peacebot** ("A simple bot that invites each player to be peaceful").
+
+### Paquette, Lu, Bocco, Smith, Ortiz-Gagné, Kummerfeld, Singh, Pineau and Courville (2019), "[No Press Diplomacy: Modeling Multi-Agent
+Gameplay](http://papers.nips.cc/paper/8697-no-press-diplomacy-modeling-multi-agent-gameplay.pdf)", NIPS
+
+> We propose Diplomacy as a new multi-agent benchmark for dynamic cooperation emergence in a rich environment
+
+Introduces DipNet, a gunboat bot that is first trained (supervised learning) on a dataset of about 150,000 human Diplomacy games (of which c. 33,000 are gunboat); this initialises self-play reinforcement learning.  DipNet outperforms a number of benchmark bots. Interestingly:
+
+>  the supervised agent was able to learn to coordinate support orders while this behaviour appears to deteriorate during self-play training.
+
+The DipNet code is available [here](https://github.com/diplomacy/research).  DipNet is implemented as _KestasBot_ on [webdiplomacy.net](webdiplomacy.net).
 
 ### de Jonge and Sierra (2017), "[D-Brane: a diplomacy playing agent for automated negotiations research](https://link.springer.com/article/10.1007/s10489-017-0919-y)", Applied Intelligence
 
@@ -84,7 +100,7 @@ A deceptively unimpressive website disguising serious games and content, includi
 
 #### [webDiplomacy](https://webdiplomacy.net/)
 
-A GitHub project.
+A GitHub project, which - in 2019 - became the first online Diplomacy game to [host bots](http://webdiplomacy.net/contrib/phpBB3/viewtopic.php?f=5&t=1938) (see Paquette et al. 2019, above).  Its Discord channel is [here](https://discord.gg/dPm4QnY).
 
 #### [Backstabbr](https://www.backstabbr.com)
 
@@ -113,7 +129,7 @@ A book about negotiation in (human) Diplomacy by [Conor Kostick](https://en.wiki
 * a [Discord server](https://discordapp.com/invite/TEsAsyM);
 * rec.games.diplomacy newsgroup (or via [Google Groups](https://groups.google.com/forum/#!forum/rec.games.diplomacy))
 
-### [Diplomacy Adjudicator Test Cases](http://web.inter.nl.net/users/L.B.Kruijswijk/) (DATC)
+### Kruijswijk's [Diplomacy Adjudicator Test Cases](http://web.inter.nl.net/users/L.B.Kruijswijk/) (DATC)
 
 Detailed discussion of algorithmic order adjudication based primarily on the 2000 Diplomacy rules.  Last updated in 2009.
 
@@ -173,7 +189,7 @@ The podcast covers some of the material in David Hill's "[The Board Game of the 
 
 > “What I love about the game is that no one can really play the game ‘right,’” Birsan said. “Otherwise, after 50 years, that would have been discovered long ago and the hobby would have died of boredom.”
 
-Would you believe, a whole[ Diplomacy Games podcast series](http://diplomacygames.com/)?
+Would you believe, a whole [Diplomacy Games podcast series](http://diplomacygames.com/)?
 
 ### [Diplicity](https://play.google.com/store/apps/details?id=se.oort.diplicity)
 
