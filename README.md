@@ -17,7 +17,7 @@ We intend to develop this project via the [Diplomacy AI](https://www.meetup.com/
 <!-- 1. 2020 or later: a **winning entry in the annual Automated Negotiating Agents' Competition (ANAC) Diplomacy League**.  Entrants submit negotiating agents that play by being coupled to [D-Brane](https://link.springer.com/article/10.1007/s10489-017-0919-y), which picks moves.  See the [2019 call for participation](http://www.iiia.csic.es/~davedejonge/bandana/files/call_for_participation_2019.pdf) (deadline 20 May); negotiations use the [BANDANA framework](http://www.iiia.csic.es/~davedejonge/bandana), which has well-defined semantics.
 -->
 1. an **article in an internationally recognised AI journal** describing our work.  (The ANAC Diplomacy League was part of the [IJCAI](https://www.ijcai.org), International Joint Conferences on Artificial Intelligence.)
-1. **beat human players** in online Diplomacy fora.  Initially, Gunboat Diplomacy, then full Diplomacy online and, finally, full Diplomacy face-to-face (e.g. at [WorldDipCon](https://en.wikipedia.org/wiki/Diplomacy_(game)#Major_championship_tournaments)).
+1. **beat human players** in online Diplomacy fora (e.g. [webDiplomacy](webdiplomacy.net)).  Initially, Gunboat Diplomacy, then full Diplomacy online and, finally, full Diplomacy face-to-face (e.g. at [WorldDipCon](https://en.wikipedia.org/wiki/Diplomacy_(game)#Major_championship_tournaments)).
 
 ## Key resources
 
@@ -46,8 +46,6 @@ The scoring system (12 points for a solo victory, etc.) is drawn from [PlayDiplo
 
 2008, 5th edition.  Here is the [2000 4th edition](https://web.archive.org/web/20040611030459/http://www.wizards.com/avalonhill/rules/diplomacy.pdf).  See Kruijswijk's [DATC](http://web.inter.nl.net/users/L.B.Kruijswijk/#3) for a list of previous editions.
 
-## Other resources
-
 ### Paquette, Lu, Bocco, Smith, Ortiz-Gagné, Kummerfeld, Singh, Pineau and Courville (2019), "[No Press Diplomacy: Modeling Multi-Agent
 Gameplay](http://papers.nips.cc/paper/8697-no-press-diplomacy-modeling-multi-agent-gameplay.pdf)", NIPS
 
@@ -63,11 +61,13 @@ The Python 3 DipNet code is available [here](https://github.com/diplomacy/resear
 
 A discussion of this is [here](http://webdiplomacy.net/contrib/phpBB3/viewtopic.php?f=5&t=1938), where Squigs44 explains the deterioration during self-play: "when it learned from webdip, it was able to more effectively support others. When it learned from itself, it was less effective at supporting others, and was more effective at winning. The goal of the bot isn't to support, it is to win. Since the bot is in a gunboat setting, it makes sense that supporting other countries wasn't as rewarding." 
 
-Episode 52 of the [Diplomacy Games podcast series](http://diplomacygames.com/), the [Rise of the Bots](https://diplomacygames.com/rise-of-the-bots/) discusses these bots.  The 'Jane' bot is drawn from [Ender's Game](https://en.wikipedia.org/wiki/Jane_(Ender%27s_Game)).  The ethical question of whether to add messaging (thus, teaching bots to lie to humans) is raised, and countered by the observation that bots already bluff in poker.
+Episode 52 of the [Diplomacy Games podcast series](http://diplomacygames.com/), the [Rise of the Bots](https://diplomacygames.com/rise-of-the-bots/) discusses these bots.  The 'Jane' bot is drawn from [Ender's Game](https://en.wikipedia.org/wiki/Jane_(Ender%27s_Game)).  The ethical question of whether to add messaging (thus, teaching bots to lie to humans) is raised, and countered by the observation that bots already bluff in poker.  It's noted (without explanation) that the bots' performance declines as game progress.
 
 ### de Jonge and Sierra (2017), "[D-Brane: a diplomacy playing agent for automated negotiations research](https://link.springer.com/article/10.1007/s10489-017-0919-y)", Applied Intelligence
 
 Detailed description of the D-Brane (Diplomacy BRAnch & bound NEgotiator) modules, which seek to myopically maximise the Supply Centres gained _in the current round_ using And/Or tree search with Branch & Bound.  Thus, while tactically strong, it is not built for longer-term planning.
+
+## Other resources
 
 ### [Parlance](https://pypi.org/project/Parlance/)
 
