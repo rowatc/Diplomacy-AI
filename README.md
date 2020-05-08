@@ -102,7 +102,7 @@ Some online fora for playing Diplomacy are:
 
 #### [webDiplomacy](https://webdiplomacy.net/)
 
-A GitHub project, which - in 2019 - became the first online Diplomacy game to [host bots](http://webdiplomacy.net/contrib/phpBB3/viewtopic.php?f=5&t=1938) (see Paquette et al. 2019, above).
+A [GitHub project](https://github.com/kestasjk/webDiplomacy), which - in 2019 - became the first online Diplomacy game to [host bots](http://webdiplomacy.net/contrib/phpBB3/viewtopic.php?f=5&t=1938) (see Paquette et al. 2019, above).
 
 In Sept/Oct 2019, webDiplomacy ran its first human v bot [Terminator Tournament](http://www.webdiplomacy.net/contrib/phpBB3/viewtopic.php?f=10&t=1937).  The overall rate of solo victories by the c. 70 human players was about 30%; of the c. 20 top human players, the solo rate was still less than 50%.  Discussions on webDiplomacy and in the [Rise of the Bots](https://diplomacygames.com/rise-of-the-bots/) podcast indicate that the bots are unexpectedly strong.
 
