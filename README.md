@@ -46,8 +46,7 @@ The scoring system (12 points for a solo victory, etc.) is drawn from [PlayDiplo
 
 2008, 5th edition.  Here is the [2000 4th edition](https://web.archive.org/web/20040611030459/http://www.wizards.com/avalonhill/rules/diplomacy.pdf).  See Kruijswijk's [DATC](http://web.inter.nl.net/users/L.B.Kruijswijk/#3) for a list of previous editions.
 
-### Paquette, Lu, Bocco, Smith, Ortiz-Gagné, Kummerfeld, Singh, Pineau and Courville (2019), "[No Press Diplomacy: Modeling Multi-Agent
-Gameplay](http://papers.nips.cc/paper/8697-no-press-diplomacy-modeling-multi-agent-gameplay.pdf)", NIPS
+### Paquette, Lu, Bocco, Smith, Ortiz-Gagné, Kummerfeld, Singh, Pineau and Courville (2019), "[No Press Diplomacy: Modeling Multi-Agent Gameplay](http://papers.nips.cc/paper/8697-no-press-diplomacy-modeling-multi-agent-gameplay.pdf)", NIPS
 
 > We propose Diplomacy as a new multi-agent benchmark for dynamic cooperation emergence in a rich environment
 
