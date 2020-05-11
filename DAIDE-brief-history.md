@@ -11,7 +11,7 @@ into an email and send them to one of the [Ken Lowe Email Diplomacy Judges](http
 and then when the results came back, they would be copied and pasted into the AI so it could generate its next orders.
 
 What I felt was apparent, was that the next step was not to do more development of AIs, but to develop an environment where AIs could 
-play each other. Hence [DAIDE](daide.org.uk) - the Diplomacy AI Development Environment - was born.
+play each other. Hence [DAIDE](http://daide.org.uk) - the Diplomacy AI Development Environment - was born.
 
 The concept was simple. At its heart is a TCP/IP server which would run the games. Each AI would then be a TCP/IP client. By using 
 TCP/IP, AIs could be developed in any language on any platform (whereas for instance, if the AIs had been DLLs, it would have restricted 
