@@ -150,7 +150,7 @@ Detailed discussion of algorithmic order adjudication based primarily on the 200
 
 ### [Diplomacy AI Development Environment](http://daide.org.uk) (DAIDE)
 
-A UK-based Diplomacy AI community project begun in 2002, which is now moribund.  There seems to have been no significant new material added to the website since 2013.
+A UK-based Diplomacy AI community project begun in 2002, which is now moribund.  There seems to have been no significant new material added to the website since 2013.  A brief history is [here](DAIDE-brief-history.md).
 
 Its March 2010 DAIDE Message Syntax document is [here](http://www.ellought.demon.co.uk/dipai/daide_syntax.pdf).
 
