@@ -76,6 +76,10 @@ A Python 2 framework for playing the Diplomacy board game over a network.  [BAND
 
 A set of bots to play Diplomacy over Parlance, from **blabberbot** ("A simple bot that sends constant streams of random press") to **neurotic** ("A neural-network bot, which unfortunately has no memory yet") and **peacebot** ("A simple bot that invites each player to be peaceful").
 
+### Kemmerling, Ackermann, Preuss (2011), "[Nested look-ahead evolutionary algorithm based planning for a believable diplomacy bot](http://ls11-www.cs.tu-dortmund.de/_media/rudolph/planning-diplomacy-bot.pdf)", European Conference on the Applications of Evolutionary Computation
+
+Provides a history of Diplomacy bots, including Stragotiator (reportedly able to pass the Turing Test in some short games).  Estimates that the number of possible placements for 34 units is 4.09 x 10^27, with each capable of executing about 7.24 moves on average (without convoying).  Reports on results of play by a version of Stragotiator with enhanced planning against raw Stragotiator and Albert.
+
 ### Shapiro, Fuchs and Levinson (2002), "[Learning a Game Strategy Using Pattern-Weights and Self-Play](https://link.springer.com/chapter/10.1007/978-3-540-40031-8_4)", Third International Conference on Computers and Games
 
 Trained a TD RL system on an existing knowledge base.  In contrast to the ANAC project, this system plays 'gunboat' Diplomacy, moving without negotiations.  &#0167;2 describes the game graph and action space.
