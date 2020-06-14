@@ -48,8 +48,6 @@ The scoring system (12 points for a solo victory, etc.) is drawn from [PlayDiplo
 
 ### Paquette, Lu, Bocco, Smith, Ortiz-Gagné, Kummerfeld, Singh, Pineau and Courville (2019), "[No Press Diplomacy: Modeling Multi-Agent Gameplay](http://papers.nips.cc/paper/8697-no-press-diplomacy-modeling-multi-agent-gameplay.pdf)", NIPS
 
-> We propose Diplomacy as a new multi-agent benchmark for dynamic cooperation emergence in a rich environment
-
 Introduces DipNet, a gunboat bot that is first trained (supervised learning) on a dataset of about 150,000 human Diplomacy games (of which c. 33,000 are gunboat), primarily from [webDiplomacy](webdiplomacy.net); this initialises self-play reinforcement learning. Its reward function includes both local terms (as supply centres are won/lost) and a terminal one (34 points for a solo victory, etc.).  As inputs, the model takes the "current board state and previous phase orders".
 
 DipNet outperforms a number of benchmark bots, including Jason van Hal's [Albert](https://sites.google.com/site/diplomacyai/home), its benchmark bot.
@@ -61,6 +59,10 @@ The Python 3 DipNet code is available [here](https://github.com/diplomacy/resear
 A discussion of this is [here](http://webdiplomacy.net/contrib/phpBB3/viewtopic.php?f=5&t=1938), where Squigs44 explains the deterioration during self-play: "when it learned from webdip, it was able to more effectively support others. When it learned from itself, it was less effective at supporting others, and was more effective at winning. The goal of the bot isn't to support, it is to win. Since the bot is in a gunboat setting, it makes sense that supporting other countries wasn't as rewarding." 
 
 Episode 52 of the [Diplomacy Games podcast series](http://diplomacygames.com/), the [Rise of the Bots](https://diplomacygames.com/rise-of-the-bots/) discusses these bots.  The 'Jane' bot is drawn from [Ender's Game](https://en.wikipedia.org/wiki/Jane_(Ender%27s_Game)).  The ethical question of whether to add messaging (thus, teaching bots to lie to humans) is raised, and countered by the observation that bots already bluff in poker.  It's noted (without explanation) that the bots' performance declines as game progress.
+
+### Anthony, Eccles, Tacchetti, Kramár, Gemp, Hudson, Porcel, Lanctot, Pérolat, Everett, Singh, Graepel, Bachrach, "[Learning to Play No-Press Diplomacy with Best Response Policy Iteration](https://arxiv.org/pdf/2006.04635.pdf)", DeepMind
+
+Built on Paquette et al. (2019) by introducing sampled best responses (SBRs) for policy iteration.  Along with some changes to the DipNet neural architecture, the result outperforms existing benchmarks, including DipNet.  The agents will be made open source once the paper is accepted for publication.
 
 ### de Jonge and Sierra (2017), "[D-Brane: a diplomacy playing agent for automated negotiations research](https://link.springer.com/article/10.1007/s10489-017-0919-y)", Applied Intelligence
 
@@ -174,23 +176,27 @@ The authors' page [here](http://vene.ro/betrayal/) summarises their findings and
 
 ### Masters' theses
 
-#### Fernandes de Mascarenhas (2017), "[AI player for board game Diplomacy](https://fenix.tecnico.ulisboa.pt/downloadFile/1970719973966529/Thesis.pdf)"
+#### Cruz and Lopes Cardoso (2019), "[Deep Reinforcement Learning in Strategic Multi-Agent Games: the case of No-Press Diplomacy](https://github.com/BlueDi/DeepDip)", Universidade do Porto
+
+Introduces DeepDip, an openAI gym based on Parlance and BANDANA to play no-press Diplomacy on three map variants: the original, a three-player version, and a two-player version.
+
+#### Fernandes de Mascarenhas (2017), "[AI player for board game Diplomacy](https://fenix.tecnico.ulisboa.pt/downloadFile/1970719973966529/Thesis.pdf)", Técnico Lisboa
 
 Surveys DAIDE, including the bots developed for it, and presents Tagus, its own (hard-coded) bot.
 
-#### Webb, Chin, Wilkins, Payce, Dedoyard (2008), "[Automated Negotiation in the Game of Diplomacy](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.466.6361&rep=rep1&type=pdf)"
+#### Webb, Chin, Wilkins, Payce, Dedoyard (2008), "[Automated Negotiation in the Game of Diplomacy](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.466.6361&rep=rep1&type=pdf)", Imperial College
 
-Project report of Imperial College MEng students, supervised by Iain Phillips.  On AI/ML:
+Project report of MEng students, supervised by Iain Phillips.  On AI/ML:
 
 > Machine Learning Currently most bots learn very little during the course of play. If a bot can be designed that interprets and learns from the actions of its opponents a better bot may be created.
 
-#### Huff, Chan, Tondelier, Bundred, Egan (2005), "[Automated Negotiation in the Game of Diplomacy](https://www.tofgarion.net/lectures/XX201/diplomacy/reportHuff.pdf)"
+#### Huff, Chan, Tondelier, Bundred, Egan (2005), "[Automated Negotiation in the Game of Diplomacy](https://www.tofgarion.net/lectures/XX201/diplomacy/reportHuff.pdf)", Imperial College
 
-Project report of Imperial College MEng students, again supervised by Iain Phillips.  &#0167;2 reviews existing Diplomacy bots.  No AI/ML used.
+Project report of MEng students, again supervised by Iain Phillips.  &#0167;2 reviews existing Diplomacy bots.  No AI/ML used.
 
-#### Ritchie (2003), "[Diplomacy — A.I.](http://daide.org.uk/external/ritchie200309.pdf)"
+#### Ritchie (2003), "[Diplomacy — A.I.](http://daide.org.uk/external/ritchie200309.pdf)", University of Glasgow
 
-University of Glasgow MSc thesis supervised by Ron Poet.  Chapter 3 discusses theories of Diplomacy play.
+MSc thesis supervised by Ron Poet.  Chapter 3 discusses theories of Diplomacy play.
 
 ### podcasts!?
 
