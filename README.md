@@ -52,7 +52,7 @@ Introduces DipNet, a gunboat bot that is first trained (supervised learning) on 
 
 DipNet outperforms a number of benchmark bots, including Jason van Hal's [Albert](https://sites.google.com/site/diplomacyai/home), its benchmark bot.
 
-The Python 3 DipNet code is available [here](https://github.com/diplomacy/research).  DipNet bots are implemented on [webdiplomacy.net](webdiplomacy.net), allowing a human to play against six bots (of which there are two variants).  
+The Python 3 DipNet code is available [here](https://github.com/diplomacy/research).  The code also includes a game server, implemented as an OpenAI gym.  DipNet bots are implemented on [webdiplomacy.net](webdiplomacy.net), allowing a human to play against six bots (of which there are two variants).  
 
 >  the supervised agent was able to learn to coordinate support orders while this behaviour appears to deteriorate during self-play training.
 
