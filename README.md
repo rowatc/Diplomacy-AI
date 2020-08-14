@@ -90,7 +90,7 @@ Trained a TD RL system on an existing knowledge base.  In contrast to the ANAC p
 
 "This paper addresses one element of creating a planner for a Diplomacy agent: an efficient search algorithm for determining the shortest path to achieving victory in the game".
 
-### [World Diplomacy Database](world-diplomacy-database.com)
+### [World Diplomacy Database](http://world-diplomacy-database.com)
 
 Includes:
 1. [tournaments](http://world-diplomacy-database.com/php/results/tournament_list.php);
