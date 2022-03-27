@@ -60,7 +60,7 @@ A discussion of this is [here](http://webdiplomacy.net/contrib/phpBB3/viewtopic.
 
 Episode 52 of the [Diplomacy Games podcast series](http://diplomacygames.com/), the [Rise of the Bots](https://diplomacygames.com/rise-of-the-bots/) discusses these bots.  The 'Jane' bot is drawn from [Ender's Game](https://en.wikipedia.org/wiki/Jane_(Ender%27s_Game)).  The ethical question of whether to add messaging (thus, teaching bots to lie to humans) is raised, and countered by the observation that bots already bluff in poker.  It's noted (without explanation) that the bots' performance declines as game progress.
 
-### Anthony, Eccles, Tacchetti, Kramár, Gemp, Hudson, Porcel, Lanctot, Pérolat, Everett, Singh, Graepel, Bachrach, "[Learning to Play No-Press Diplomacy with Best Response Policy Iteration](https://arxiv.org/pdf/2006.04635.pdf)", arXiv 2022
+### Anthony, Eccles, Tacchetti, Kramár, Gemp, Hudson, Porcel, Lanctot, Pérolat, Everett, Singh, Graepel, Bachrach, "[Learning to Play No-Press Diplomacy with Best Response Policy Iteration](https://proceedings.neurips.cc/paper/2020/hash/d1419302db9c022ab1d48681b13d5f8b-Abstract.html)", NeurIPS 2020
 
 Built on Paquette et al. (2019) by introducing sampled best responses (SBRs) for policy iteration.  Along with some changes to the DipNet neural architecture, the result outperforms existing benchmarks, including DipNet.  The agents will be made open source once the paper is accepted for publication.
 
