@@ -60,9 +60,21 @@ A discussion of this is [here](http://webdiplomacy.net/contrib/phpBB3/viewtopic.
 
 Episode 52 of the [Diplomacy Games podcast series](http://diplomacygames.com/), the [Rise of the Bots](https://diplomacygames.com/rise-of-the-bots/) discusses these bots.  The 'Jane' bot is drawn from [Ender's Game](https://en.wikipedia.org/wiki/Jane_(Ender%27s_Game)).  The ethical question of whether to add messaging (thus, teaching bots to lie to humans) is raised, and countered by the observation that bots already bluff in poker.  It's noted (without explanation) that the bots' performance declines as game progress.
 
-### Anthony, Eccles, Tacchetti, Kramár, Gemp, Hudson, Porcel, Lanctot, Pérolat, Everett, Singh, Graepel, Bachrach, "[Learning to Play No-Press Diplomacy with Best Response Policy Iteration](https://arxiv.org/pdf/2006.04635.pdf)", DeepMind
+### Anthony, Eccles, Tacchetti, Kramár, Gemp, Hudson, Porcel, Lanctot, Pérolat, Everett, Singh, Graepel, Bachrach, "[Learning to Play No-Press Diplomacy with Best Response Policy Iteration](https://arxiv.org/pdf/2006.04635.pdf)", arXiv 2022
 
 Built on Paquette et al. (2019) by introducing sampled best responses (SBRs) for policy iteration.  Along with some changes to the DipNet neural architecture, the result outperforms existing benchmarks, including DipNet.  The agents will be made open source once the paper is accepted for publication.
+
+### Gray, Lerer, Bakhtin, Brown, "[Human-level Performance in No-Press Diplomacy via Equilibrium Search](https://arxiv.org/pdf/2010.02923.pdf)", ICLR 2021
+
+Modified Paquette et al.'s DipNet to create SearchBot, which outperformed DipNet and its variants in 1v6 match-ups (the bot under study v six copies of comparison bots).  Six copies of each bot also played no-press games against Doug Moore and Marvin Fried, the top two finishers in  the 2017 World Diplomacy Convention; SearchBot was the only bot to outperform the humans; DipNet underperformed them.
+
+### Bakhtin, Wu, Lerer, Brown, "[No-Press Diplomacy from Scratch](https://proceedings.neurips.cc/paper/2021/hash/95f2b84de5660ddf45c8a34933a2e66f-Abstract.html)", NeurIPS 2021
+
+Introduced DORA (Double Oracle Reinforcement learning for Action exploration), the first no-press Diplomacy bot to be trained from scratch, rather than on human games.  To reduce the search space, game theoretical equilibrium concepts are built into DORA.  In seven player games of six copies of one bot against a comparison bot, DORA outperforms.  However, in games in which one copy of DORA performs against six copies of a comparison bot, DORA underperforms.  This seems to reflect an equilibrum coordination problem: the equilibria learned by DORA (on its own, without reference to human games) are not necessarily consistent with other bots' play.  DORA achieved superhuman performance in two player no-press Austria v France games.
+
+### Jacob, Wu, Farina, Lerer, Hu, Bakhtin, Andreas, Brown, "[Modeling Strong and Human-Like Gameplay with KL-Regularized Search](https://arxiv.org/pdf/2112.07544.pdf)", arXiv 2022
+
+Further developments from the team behind SearchBot and DORA.  Now piKL-HedgeBot, introduced here, outperforms all other bots in seven player no-press games whose agents are uniformly drawn from the set of bots - a richer environment than the 1v6 tests frequently used.
 
 ### de Jonge and Sierra (2017), "[D-Brane: a diplomacy playing agent for automated negotiations research](https://link.springer.com/article/10.1007/s10489-017-0919-y)", Applied Intelligence
 
